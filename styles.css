@@ -1,6 +1,49 @@
-*{
+body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+#header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.logo-large{
+    background-image: url("/images/bg-header-mobile.png"),
+        linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+    background-size: cover;
+    width:100%;
+}
+.header-text{
+    
+}
+/* *************
+    Buttons
+************* */
+.button{
+    color:white;
+    font-weight: 600;
+    opacity: 90%;
+    border:none;
+    padding:10px 70px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* *************
+MOBILE DESIGN
+************* */
+@media screen and (max-width:550px){
+    
+    
 }
