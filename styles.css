@@ -12,19 +12,33 @@ body{
     align-items: center;
     justify-content: center;
 }
-.logo-large{
+.logo-large-container{
     background-image: url("/images/bg-header-mobile.png"),
         linear-gradient(to top, #fff, rgba(255, 255, 255, 0));
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    height:40vh;
     width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
-.header-text{
-    
+.logo-large{
+    width:150px;
+    height:150px;
+}
+section{
+    margin:10% 0;
+}
+section:nth-of-type(1){
+    margin-top: 0;
 }
 /* *************
     Buttons
 ************* */
 .button{
+    cursor:pointer;
     color:white;
     font-weight: 600;
     opacity: 90%;
@@ -33,13 +47,53 @@ body{
     border-radius: 20px;
     margin-bottom: 20px;
 }
+
 .ios{
     background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 4px 2px 0px hsl(171, 66%, 44%);
+}
+.ios:hover {
+	background-color:hsl(171, 68%, 46%);
+    box-shadow: 0px 4px 2px 1px hsl(171, 67%, 45%);
+}
+.ios:active {
+	position:relative;
+	top:1px;
+    box-shadow: 0px 2px 2px 1px hsl(171, 67%, 45%);
 }
 .mac{
     background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 4px 2px 1px hsl(233, 100%, 69%);
+}
+.mac:hover {
+	background-color:hsl(233, 98%, 71%);
+    box-shadow: 0px 4px 2px 1px hsl(233, 99%, 70%);
+}
+.mac:active {
+    box-shadow: 0px 2px 2px 1px hsl(233, 99%, 70%);
+	position:relative;
+	top:1px;
+}
+/* *************
+    Fonts
+************* */
+p{
+    color:hsl(201, 11%, 66%);
+}
+/* *************
+    Footer
+************* */
+footer{
+    display: flex;
 }
 
+li{
+    list-style: none;
+}
+li a{
+    color:hsl(210, 10%, 33%);
+    text-decoration: none;
+}
 /* *************
 MOBILE DESIGN
 ************* */
