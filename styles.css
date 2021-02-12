@@ -83,21 +83,62 @@ p{
 /* *************
     Footer
 ************* */
-footer{
+#footer{
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:10vh;
+    padding:20px;
 }
-
-li{
-    list-style: none;
+.logo-small{
+    width:100%;
+    height:auto;
 }
-li a{
+.footer-links{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footer-link{
+    margin: 20px;;
     color:hsl(210, 10%, 33%);
+    text-align: left;
     text-decoration: none;
 }
+.footer-link:hover{
+    color:hsl(171, 66%, 44%);
+}
+/* *************
+TABLET DESIGN
+************* */
+@media screen and (max-width:800px){
+    #footer{
+        margin-top: 20px;
+        height:40vh;
+        flex-direction: column;
+        justify-items: space-between;
+    }
+    .footer-links{
+        grid-template-columns: repeat(4,1fr);
+    }
+    
+    
+}
+
 /* *************
 MOBILE DESIGN
 ************* */
 @media screen and (max-width:550px){
+    #footer{
+        margin-top: 20px;
+        height:40vh;
+        flex-direction: column;
+    }
+    .footer-links{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .footer-link{
+        text-align: center;
+    }
     
     
 }
